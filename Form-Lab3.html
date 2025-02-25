@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>BSET-046 Web-Lab3</title>
+</head>
+<body bgcolor="lightgrey">
+    <h1>Student Registration Form</h1>
+    <hr>
+
+    <h2>Personal Information</h2>
+    <form method="post">
+   <div> <!--This div is for Personal Informations-->
+
+    <label for="fName">First Name:</label>
+    <input type="text" id="fName" placeholder="Usama">
+
+    <label for="lName">Last Name:</label>
+    <input type="text" id="lName" placeholder="Saleem">
+
+    <label for="phone">Phone# </label>
+    <input type="phone" placeholder="+92-300-1756323" required>
+<br>
+<br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="usamasaleem8181@gmail.com" required>
+
+    <label for="DOB">Date of Birth:</label>
+    <input type="date" id="DOB" >
+
+    <label for="gender">Gender:</label>
+    <input type="radio" value="male" name="gender" checked>Male</input>
+    <input type="radio" value="female" name="gender">Female</input>
+   </div>
+   <br>
+   <hr>
+
+    <h2>Academic Information</h2>
+     
+     <div><!--This div is for Academic Informations-->
+        
+    <label for="sID">Student ID:</label>
+    <input type="text" id="sID" placeholder="BSET-046" >
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" placeholder="Web Technologies">
+
+    <label for="payment">Semester:</label>
+    <select name="semester">
+		<option value="1st">1st</option>
+        <option value="2nd" >2nd</option>
+        <option value="3rd" disabled>3rd</option>
+        <option value="4th" selected>4th</option>
+        <option value="5th">5th</option>
+        <option value="6th">6th</option>
+	</select>
+<br>
+<br>
+    <label for="gpa">GPA:</label>
+    <input type="text" id="gpa" placeholder="3.6">
+    <label for="cgpa">CGPA:</label>
+    <input type="text" id="cgpa" placeholder="3.3">
+
+     </div>
+     <br>
+     <hr>
+
+     <h2>Skills & Interests</h2>
+     <div><!---This div is for Skills and Interests-->
+
+    <label for="techSkills">Tech Skills:</label>
+	
+	<input type="checkbox" id="techSkills" value="HTML" >HTML</input>
+	<input type="checkbox" id="techSkills "value="C++" checked >C++</input>
+    <input type="checkbox" id="techSkills" value="MySQL" >MySQL</input>
+	<input type="checkbox" id="techSkills "value="React" >React</input>
+	<br><br>
+    <label for="Interests">Interests:</label>
+	
+	<input type="checkbox" id="Interests" value="Reading" >Reading</input>
+	<input type="checkbox" id="Interests "value="Sports" checked>Sports</input>
+    <input type="checkbox" id="Interests" value="Gaming" >Gaming</input>
+	<input type="checkbox" id="Interests "value="Writing" >Writing</input>
+     </div>
+<br>
+<hr>
+     <h2>Account Information</h2>
+     <div><!---This div is for Account Information-->
+        <label for="userName">Username:</label>
+    <input type="text" id="fName" placeholder="usamasaleem">
+
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" placeholder="********">
+        </div>
+<br>
+<hr>
+    <h2>Additional Information</h2>
+    <div><!---This div is for Additional Informations-->
+
+    <label for="img">Upload Image</label>
+    <input type="file" id="img" name="img" accept="image/*">
+<br><br>
+    <label for="lMode">Preferred Learning Mode: </label>
+    <select name="lMode">
+        <option value="online">Online</option>
+        <option value="face-to-face">Face-to-Face</option>
+        <option value="hybrid">Hybrid</option>
+    </select>
+</div>
+<br>
+<hr>
+<h2>Previous Manuals</h2>
+<div><!--This div is for previous manuals -->
+    <ul>
+        <li><a href="resumeLab1.html">Resume-Lab1</a></li>
+        <li><a href="resume-Lab2.html">Resume-Lab2</a></li>
+    </ul>
+
+
+</div>
+    <div><!--This div is for terms and conditions-->
+        <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions.
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </div>
+
+
+
+    
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-Registration-Form</title>
+</head>
+<body>
+    <div>
+    <u><h1>Registration </h1></u>
+   <p>Fill in this form to register</p>
+</div>
+
+
+    <form>
+        <div> <label for="fName" >First Name: </label>
+            <input type = "text" placeholder ="Ahsan " id = "fName" required></div>
+       <br>
+
+       <div><label for="lName">Last Name:</label>
+        <input type = "text " placeholder="Muneeb" id="lName" required>
+    </label>
+</div>
+<br>
+<div>
+    <label for="phone">Phone:</label>
+    <input type="phone" placeholder="+92-300-1756323" required id="phone">
+</div>
+<br>
+    <div>
+        <label for="email">Email:</label>
+        <input type = "email" placeholder="ahsanMuneeb@gmail.com" id="email" required >
+    </div>
+    <br>
+    <div>
+        <label for = "pass" >Password:</label>
+        <input type="password" placeholder="*********" id="pass" maxlength="8" required>
+    </div>
+    <br>
+    <div>
+        <label for="bdate">DOB:</label>
+        <input type="date" required >
+    </div>
+    <br>
+    <div>
+        <label for="gender">Gender:</label>
+        <label for="Male" >Male</label>
+        <input type = "radio" name = "gender">
+
+        <label for="Female">Female</label>
+        <input type = "radio" name = "gender" checked>
+
+    </div>
+    <br>
+    <div>
+        <label for="quantity">Quantity</label>
+        <input type="number" min="0" max="5" id="quantity" value="1">
+    </div>
+    <br>
+    <div>
+        <label for="payment">Payment:</label>
+        <select id="payment" name="payment">
+        <option value="visa">visa</option>
+        <option value="paypak">paypak</option>
+        <option value="mastercard">mastercard</option>
+    </select>
+    </div>
+    <br>
+    <div>
+        <label for="choice">Skills:</label>
+        <br>
+    <input type="checkbox" id="choice" >
+    HTML
+    <br>
+    <input type="checkbox" id="choice" >
+    C++
+    <br>
+    <input type="checkbox" id="choice">
+    MySQL
+    </div>
+    <br>
+    <div>
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I agree to the terms and conditions</label>
+        </div>
+        <br>
+    <div>
+    
+        <input type ="reset">
+        <input type="submit"
+    </div>
+    
+   
+      
+
+</form>
+</body>
+</html>
