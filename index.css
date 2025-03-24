@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar 
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 15px;
+}
+
+.navigation a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: #007BFF;
+}
+    */
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background: #007BFF;
+        border-radius: 10px;
+        margin: 20px auto;
+        width: fit-content;
+    }
+    
+    .navigation a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    
+    .navigation a:hover {
+        background-color: white;
+    color: #007BFF;
+    }
+
+/* Projects Section */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Card Layout */
+.project_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Project Card */
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Links */
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project a:hover {
+    background: #0056b3;
+}
+
+
