@@ -1,0 +1,178 @@
+/*This is a comment in css*/
+h1{
+    color : white;
+    text-shadow : 2px 2px red;
+    
+}
+p,h3{
+    color : blue;
+    font-size : 30px;
+    
+}
+
+#italic{
+    font-style : italic;
+    color:limegreen;
+}
+
+.center{
+    text-align: center;
+}
+
+.bg{
+    background-color: aqua;
+}
+
+.new-thing{
+    font-weight: bold;
+    font-style:oblique;
+    color:darkmagenta;
+    background-color: tomato;
+
+}
+
+h2{
+    font-size:20px;
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+#b1{
+    border:2px solid blue;
+}
+#b2{
+    border:2px dashed violet;
+}
+
+#b3{
+    border:2px dotted seagreen;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.bg{
+    background-color:lightpink;
+    opacity : 0.5;
+}
+
+.new-thing{
+    background : rgba(0,128,0,0.2);
+}
+
+#bg-image{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+    text-align:center;
+    color : black;
+    background-image:url(resume\ img.png);
+    background-repeat: no-repeat;
+    background-position: right ;
+   
+}
+
+.fixed{
+    background-image: url(youtube-icon.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+    background-attachment: fixed;
+    
+}
+
+p.all{
+    border:2px outset black;
+}
+p.under{
+    border: dotted  ;
+    border-top:2px;
+    border-left: 2px;
+    border-right:2px;
+    border-bottom-color: red;
+  
+}
+
+p.rounded{
+    border:2px solid black;
+    border-radius: 10px;
+    margin-right: 1000px;
+
+}
+
+p.left{
+    border:1px solid red;
+    border-left-width: 20px;
+    border-top:2px;
+    border-right: 2px;
+    border-bottom:2px;
+    margin-right:1500px;
+}
+
+p.mixed{
+    border-top-color: red;
+    border-top-style: dotted ;
+    border-right-style: solid;
+    border-bottom-style: dashed;
+    border-bottom-color: purple;
+    border-left-style: outset;
+}
+
+div.margin{
+    border:2px dashed black;
+    background-color: lightpink;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+
+div.margin1{
+    height:100px;
+    width:auto;
+    border: 2px dotted black;
+    background-color:bisque;
+    color:rgb(202, 117, 13);
+    margin:10px 100px;
+
+}
+
+div.margin2{
+   font-size:50px;
+    background-color: aquamarine;
+    color:black;
+    width:1000px;
+    padding : 20px;
+    border:5px solid black;
+    margin:100px 50px;
+    outline-style:dotted ;
+    outline-color:red;
+    outline-width:2px;
+    outline-offset: 2px;
+
+}
+
+p.a{
+    text-transform: uppercase;
+}
+p.b{
+    text-transform: lowercase;
+}
+p.c{
+    text-transform: capitalize;
+}
+
+#border{
+border:2px solid black;
+}
+
+
+img{
+    margin-left:20px;
+}
+
+.x{
+margin-top:0%;
+margin-bottom : 150px;
+margin-left:20px;
+}

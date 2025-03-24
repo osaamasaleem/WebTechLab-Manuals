@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 600px;
+            background-color: white;
+            padding: 10px;
+        }
+        .header {
+            background-color: #d3d3d3;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            margin-top: 10px;
+        }
+        .photo {
+            width: 40%;
+            background-color: #d3d3d3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+        .details {
+            width: 60%;
+            background-color: #d3d3d3;
+            padding: 20px;
+        }
+        .details label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .textarea-section {
+            background-color: #d3d3d3;
+            padding: 20px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .textarea-section textarea {
+            width: 90%;
+            height: 50px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">PROFILE</div>
+    
+    <div class="content">
+        <div class="photo">PHOTO</div>
+        <div class="details">
+            <label>Name:</label>
+            <input type="text">
+            <label>Dept</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="textarea-section">
+        <textarea placeholder="TEXT AREA"></textarea>
+    </div>
+</div>
+
+</body>
+</html>
