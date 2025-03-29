@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Reservation Form with JS</title>
+<!----------------------------CSS------------------------>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgrey;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .form_details {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            width: 60%;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 99%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            display: inline-block;
+            width: 60%;
+            text-align: left;
+        }
+        .printDiv{
+            margin-left : 5px;
+        }
+        #printButton {
+            display: none;
+            background-color: #45a049;
+        }
+        #printButton:hover {
+            background-color: #45a049;
+        }
+        .printB{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!------------------------------------HTML---------------------------------------->
+</body bgcolor="lightgrey">
+<h1>Flight Reservation Form</h1>
+<p>PLease fill in this form to reserve your flight.</p>
+<hr>
+<div class="form_details">
+<label for="name">Name : </label>
+<input type="text" id="name" value = "Usama Saleem" placeholder="Full Name Here">
+
+<label for="contact">Contact : </label>
+<input type="text" id="contact" value = "312-5786856" placeholder="Phone Number Here">
+<br>
+
+
+<label for="departure_city">Departure City : </label>
+<input type="text" id="departure_city" value="Rawalpindi">
+
+<label for="arrival_city">Arrival City : </label>
+<input type="text" id="arrival_city" value="Karachi">
+
+<br>
+
+
+<label for="departure_date">Departure Date : </label>
+<input type="date" id="departure_date" >
+
+<label for="departure_time">Departure Time : </label>
+<input type="time" id="departure_time">
+
+<br>
+
+<label for="class">Class </label>
+<select id="class" name="class">
+    <option value="Economy" selected>Economy</option>
+    <option value="Premium">Premium</option>
+    <option value="Business">Business</option>
+    <option value="First" >First</option>
+</select>
+
+<br><br>
+
+<button type="button" onClick="showDetails()">Submit</button>
+
+</div>
+
+<div id="output"></div>
+
+<div class="printB">
+<button id="printButton" onclick="printDetails()" >Print</button>
+</div>
+
+<!-------------------------------------JAVASCRIPT----------------------->
+<script>
+   
+function showDetails(){
+    let name = document.getElementById("name").value;
+    let contact = document.getElementById("contact").value;
+    let departure_city = document.getElementById("departure_city").value;
+    let arrival_city = document.getElementById("arrival_city").value;
+    let departure_date = document.getElementById("departure_date").value;
+    let departure_time = document.getElementById("departure_time").value;
+    let class_type = document.getElementById("class").value;
+    
+
+    document.getElementById("output").innerHTML = `
+        <h2>Flight Reservation Details</h2>
+        <p><b>Name:</b> ${name}</p>
+        <p><b>Contact:</b> ${contact}</p>
+        <p><b>Departure City:</b> ${departure_city}</p>
+        <p><b>Arrival City:</b> ${arrival_city}</p>
+        <p><b>Departure Date:</b> ${departure_date}</p>
+        <p><b>Departure Time:</b> ${departure_time}</p>
+        <p><b>Class:</b> ${class_type}</p>
+
+    `;
+
+    document.getElementById("printButton").style.display = "block";
+
+   
+}
+
+function printDetails(){
+    let userConfirm = confirm("Do you want to print this page ? ");
+    if(userConfirm){
+        alert("Flight reservation form is ready to be printed.");
+        window.print();
+    }else{
+        alert("Printing request cancelled.");
+    }
+}
+</script>
+</html>

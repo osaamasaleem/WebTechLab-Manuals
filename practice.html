@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    
+    <input type="text" id="f_name" placeholder="First Name">
+    <input type="text" id="l_name" placeholder="Last Name">
+    <button onclick="showNames()">Submit</button>
+    <p id="displayText"></p>
+    
+    <script>
+    function showNames() {
+        let f_name = document.getElementById("f_name").value;
+        let l_name = document.getElementById("l_name").value;
+    
+        // Check if fields are empty
+        if (f_name === "" || l_name === "") {
+            document.getElementById("displayText").innerHTML = "Please enter both first and last names!";
+        } else {
+            document.getElementById("displayText").innerHTML = "Hello " + f_name + " " + l_name + "!";
+        }
+    }
+
+   
+    </script>
+
+
+    <script type="text/javascript" src="practice.js"></script>
+</body>
+</html>
