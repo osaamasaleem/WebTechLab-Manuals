@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation with JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    input {
+      padding: 8px;
+      margin: 10px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enter Your Details</h2>
+
+  <label for="username">Name:</label><br>
+  <input type="text" id="username" placeholder="Enter your name"><br>
+
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" placeholder="Enter your age"><br>
+
+  <button onclick="showData()">Submit</button>
+
+  <div id="output"></div>
+
+  <script>
+    function showData() {
+      let name = document.getElementById("username").value.trim();
+      let age = document.getElementById("age").value.trim();
+
+      if (name === "" || age === "") {
+        alert("Please fill in all fields before submitting.");
+        return; // stop execution if validation fails
+      }
+
+      document.getElementById("output").innerHTML = 
+        `Hello <b>${name}</b>, you are <b>${age}</b> years old.`;
+    }
+  </script>
+
+</body>
+</html>
