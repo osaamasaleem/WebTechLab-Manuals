@@ -44,17 +44,17 @@
   <section class="campaigns container">
     <h2>Ongoing Campaigns</h2>
     <div class="campaign-grid">
-      <div class="campaign-card">
+      <div class="campaign-card" onclick="confirmDonation()">
         <img src="Pic1.png" alt="Gaza Emergency">
         <h3>Gaza Emergency Relief</h3>
         <p>Support families with food, water, and urgent medical aid during the crisis.</p>
-        <a href="#" class="btn small">Contribute</a>
+        <a href="#" class="btn small" onclick="confirmDonation()">Contribute</a>
       </div>
-      <div class="campaign-card">
+      <div class="campaign-card" onclick="confirmDonation()">
         <img src="Pic2.png" alt="Zakat Campaign">
         <h3>Zakat for Gaza</h3>
         <p>Give your Zakat today to make a real difference in the lives of Palestinians.</p>
-        <a href="#" class="btn small">Give Zakat</a>
+        <a href="#" class="btn small" onclick="confirmDonation()">Give Zakat</a>
       </div>
      
     </div>
@@ -98,6 +98,12 @@
       &copy; 2025 Hope For Gaza | All Rights Reserved
     </div>
   </footer>
+
+  <script>
+    function confirmDonation(){
+      return confirm("Are you sure you want to donate?");
+    }
+  </script>
 
 </body>
 </html>
